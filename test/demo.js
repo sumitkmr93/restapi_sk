@@ -55,6 +55,7 @@ it('Test fizzbuzz',()=>{
    expect(res).to.equal("fizz");
    res = fizzbuzz(45);
    expect(res).to.equal("fizzbuzz");
+   assert.equal(res, "fizzbuzz","res equals fizzbuzz");
 });
 
 });

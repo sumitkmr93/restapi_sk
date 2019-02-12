@@ -19,3 +19,4 @@ routes(app); //register the route
 
 
 app.listen(port);
+module.exports = app; //needed for testing
