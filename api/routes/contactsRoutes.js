@@ -15,7 +15,7 @@ module.exports = function(app) {
         res.sendFile(__dirname + '/addContact.html');
       });
 
-      app.get('/listcontacts',(req,res)=>{
+      app.get('/',(req,res)=>{
         res.sendFile(__dirname+'/listcontacts.html');
       });
   };
