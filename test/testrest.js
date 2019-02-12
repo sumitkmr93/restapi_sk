@@ -19,3 +19,21 @@ describe('/GET contacts', () => {
           });
     });
 });
+
+describe('/POST add a contact', () => {
+    it('Post a contact', (done) => {
+        let contact = {
+            name: "Joe Tester",
+            phone: "00353 1234567"
+        }
+        chai.request(server)
+          .post('/contacts')
+          .send(contact)
+          .end((err, res) => {
+                res.should.have.status(200);
+                res.body.should.be.a('object');
+            done();
+          });
+    });
+
+});
